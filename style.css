@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #edede9;
+  }
+
+  .header {
+    text-align: center;
+  }
+  
+  .header h1 {
+    color: #2b2d42;
+    text-shadow: 5px 5px 0px #e3d5ca;
+    font-weight: 800;
+    font-size: 3rem;
+  }
+
+  .header p {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .main {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 5% 0% 5%;
+  }
+
+  figure {
+    margin: inherit;
+  }
+
+  /*I have given the figure:hover and figure.image .thumbnail the same values as a work around fix
+    to keep the thumbnails in place when you click on one of the images as I couldn't figure out how to do it properly in time. */
+
+  figure:hover {
+    display: block;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  figure.image .thumbnail {
+    display: block; 
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .thumbnail.expanded {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+    z-index: 2;
+  }
+
+  .thumbs {
+    padding: 0px;
+    margin-bottom: 0px;
+    line-height: 1.3rem;
+  }
+
+  .thumbs ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    margin: inherit;
+    padding: 0;
+  }
